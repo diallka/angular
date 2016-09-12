@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html ng-app= "Module1">
   <head>
     <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
     <title></title>
   </head>
   <body>
     <h4>Angular github projects</h4>
-    <div id="">
-      premiere div
+    <div ng-controller="Module1Controller">
+
+      <input type="text" value="{{input}}" />
+      <p>
+        {{hello()}}
+      </p>
+      <input type="text" ng-model="name"> Resultat: "{{name}}"
     </div>
   </body>
 </html>
